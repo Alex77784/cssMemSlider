@@ -6,16 +6,11 @@
     background-color: rgb(88, 88, 88);
 }
 
-.box_sliders {
-    width: 80vw;
-    height: 80vh;
-    margin: 0 auto;
-}
-
 .box_img {
     display: block;
     width: 80vw;
     height: 80vh;
+    margin: 0 auto;
 }
 
 .item_img {
@@ -23,82 +18,84 @@
     transition: all .5s linear;
 }
 
+/* navigate bar */
 .item_img>img {
     width: 100%;
     height: 100%;
+    border-radius: 20px;
 }
 
 #y1:checked~.s1 {
     height: 100%;
-    background: url(assets/1.jpg)center;
-    background-size: cover;
 }
 
 #y2:checked~.s2 {
     height: 100%;
-    background: url(assets/2.jpg)70%;
-    background-size: cover;
 }
 
 #y3:checked~.s3 {
     height: 100%;
-    background: url(assets/3.jpg) center;
-    background-size: cover;
 }
 
 #y4:checked~.s4 {
     height: 100%;
-    background: url(assets/4.jpg) 37%;
-    background-size: cover;
 }
 
 #y5:checked~.s5 {
     height: 100%;
-    background: url(assets/5.jpg) 50%;
-    background-size: cover;
 }
 
 .text {
+    width: 60vw;
     font-size: 0;
+
     transition: all .3s linear;
+    float: left;
 }
 
 #y1:checked~.t1 {
     font-size: 20px;
     color: rgb(248, 118, 209);
+    margin-top: 50px;
 }
 
 #y2:checked~.t2 {
     font-size: 20px;
     color: yellowgreen;
+    margin-top: 50px;
 }
 
 #y3:checked~.t3 {
     font-size: 20px;
     color: rgb(50, 174, 205);
+    margin-top: 50px;
 }
 
 #y4:checked~.t4 {
     font-size: 20px;
     color: rgb(205, 50, 184);
+    margin-top: 50px;
 }
 
 #y5:checked~.t5 {
     font-size: 20px;
     color: rgb(205, 164, 50);
+    margin-top: 50px;
 }
 
 .label {
     display: inline-block;
 
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
     cursor: pointer;
 
     background-color: rgb(9, 69, 97);
     border-radius: 100%;
+    margin-top: 50px;
 
     transition: all .2s linear;
+
 }
 
 .label:hover {
