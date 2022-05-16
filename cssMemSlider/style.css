@@ -1,0 +1,154 @@
+.wrapper_slider {
+    width: 100%;
+    height: 100vh;
+
+    padding: 20px;
+    background-color: rgb(88, 88, 88);
+}
+
+.box_img {
+    display: block;
+    width: 80vw;
+    height: 80vh;
+    margin: 0 auto;
+}
+
+.item_img {
+    height: 0;
+    transition: all .2s linear;
+}
+
+.item_img>img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+/* navigate bar */
+
+#y1:checked~.s1 {
+    height: 100%;
+}
+
+#y2:checked~.s2 {
+    height: 100%;
+}
+
+#y3:checked~.s3 {
+    height: 100%;
+}
+
+#y4:checked~.s4 {
+    height: 100%;
+}
+
+#y5:checked~.s5 {
+    height: 100%;
+}
+
+.text {
+    width: 59vw;
+
+    font-size: 0;
+    transition: all .3s linear;
+
+    float: left;
+}
+
+#y1:checked~.t1 {
+    font-size: 20px;
+    color: rgb(248, 118, 209);
+    margin-top: 50px;
+}
+
+#y2:checked~.t2 {
+    font-size: 20px;
+    color: yellowgreen;
+    margin-top: 50px;
+}
+
+#y3:checked~.t3 {
+    font-size: 20px;
+    color: rgb(50, 174, 205);
+    margin-top: 50px;
+}
+
+#y4:checked~.t4 {
+    font-size: 20px;
+    color: rgb(205, 50, 184);
+    margin-top: 50px;
+}
+
+#y5:checked~.t5 {
+    font-size: 20px;
+    color: rgb(205, 164, 50);
+    margin-top: 50px;
+}
+
+.box_label {
+    display: inline-block;
+    margin-top: 40px;
+}
+
+.label {
+    display: inline-block;
+
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+
+    background-color: rgb(9, 69, 97);
+    border-radius: 100%;
+
+    transition: all .2s linear;
+
+}
+
+.label:hover {
+    background-color: white;
+    border-radius: 100%;
+}
+
+.label:focus {
+    border: 5px solid rgb(214, 183, 43);
+    border-radius: 100%;
+}
+
+/* -------------mobile---------- */
+@media(max-width:768px) {
+    .box_img {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .item_img {}
+
+    .text {
+        order: 1;
+    }
+
+    #y1:checked~.t1 {
+        margin-top: 0;
+    }
+
+    #y2:checked~.t2 {
+        margin-top: 0;
+    }
+
+    #y3:checked~.t3 {
+        margin-top: 0;
+    }
+
+    #y4:checked~.t4 {
+        margin-top: 0;
+    }
+
+    #y5:checked~.t5 {
+        margin-top: 0;
+    }
+
+    .box_label {
+        margin: 20px 0;
+        text-align: center;
+    }
+}
